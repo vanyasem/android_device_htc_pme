@@ -75,13 +75,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.htc.software.market.xml:system/etc/permissions/com.htc.software.market.xml
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library \
-    libantradio
+# PRODUCT_PACKAGES += \
+#     AntHalService \
+#     com.dsi.ant.antradio_library \
+#     libantradio
 
-PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
+# PRODUCT_COPY_FILES += \
+#     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -252,8 +252,8 @@ PRODUCT_PACKAGES += \
     thermal.msm8996
 
 # Properties
-PRODUCT_PACKAGES += \
-    operator-properties
+# PRODUCT_PACKAGES += \
+#     operator-properties
 
 # QMI
 PRODUCT_PACKAGES += \
