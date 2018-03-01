@@ -74,15 +74,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     $(LOCAL_PATH)/configs/com.htc.software.market.xml:system/etc/permissions/com.htc.software.market.xml
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library \
-    libantradio
-
-# PRODUCT_COPY_FILES += \
-#     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
-
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
@@ -181,12 +172,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/synaptics_dsx.idc:system/usr/idc/synaptics_dsx.idc
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/AK8789_HALL_SENSOR.kl:system/usr/keylayout/AK8789_HALL_SENSOR.kl \
-    $(LOCAL_PATH)/keylayout/fpc1020.kl:system/usr/keylayout/fpc1020.kl \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/cypress-cap-sensor.kl:system/usr/keylayout/cypress-cap-sensor.kl
-
 # IPACM
 PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
@@ -252,7 +237,7 @@ PRODUCT_PACKAGES += \
     thermal.msm8996
 
 # Properties
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     operator-properties
 
 # QMI
@@ -285,7 +270,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hostapd.deny:system/etc/hostapd/hostapd.deny \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
-
-# KeyHandler
-#PRODUCT_PACKAGES += \
-#    com.cyanogenmod.keyhandler

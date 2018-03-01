@@ -129,7 +129,7 @@ HAVE_ADRENO_SOURCE:= false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
 # Encryption
-TARGET_HW_DISK_ENCRYPTION := true
+# NOPE! TARGET_HW_DISK_ENCRYPTION := true
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -183,8 +183,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/pme/releasetools
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+# include device/qcom/sepolicy/sepolicy.mk
+# BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Wifi
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
